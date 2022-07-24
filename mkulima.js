@@ -3,7 +3,7 @@ class Mkulima{
         this.farms=[];
         this.products=[];
         this.orders=[];
-//  1. Adding farm
+
     this.addFarm=(farmId, name, farmer, phone, address
         )=>{
     this.farms.push({
@@ -14,15 +14,13 @@ class Mkulima{
         address:address
     })
 }
-//  2. Remove Farm
     this.removeFarm=(farmId)=>{
         let deleteFarm=this.farms.find(item=>item.farmId===farmId) 
         let farmIndex=this.farms.indexOf(deleteFarm)
         this.farms.splice(farmIndex,1)
     }
 
-    
-//  4. Get Farm
+
     this.getFarm=(newId)=>{
         console.log( this.farms.find(item =>item.farmId===newId))
     }
@@ -63,7 +61,7 @@ mkulima1.addFarm(56789,"Waitathu","Steve","0700034565", 43567)
 mkulima1.addFarm(765789,"Mushatha","Mary","0745673289",09879)
 mkulima1.removeFarm(56789)
 mkulima1.getFarm(765789)
-// mkulima1.updateFarm(56764,78985,"ruiru","Jacob","0743256749",098767)
+mkulima1.updateFarm(56764,78985,"ruiru","Jacob","0743256749",098767)
 mkulima1.addProduct(75, "maize",1000)
 mkulima1.addProduct(85,"Potatoes",25)
 mkulima1.getProduct(75)
